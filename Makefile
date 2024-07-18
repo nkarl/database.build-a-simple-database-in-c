@@ -52,7 +52,7 @@ ${BUILD_APP}/%.o: ${SRC_APP}.c | setup lib
 test: ${BUILD}/run_tests
 
 ## link runner and objects
-${BUILD}/run_tests: ${BUILD_TESTS}/runner.o ${TEST_OBJECTS} ${LIB_OBJECTS}
+${BUILD}/run_tests: ${BUILD_TESTS}/run_tests.o ${TEST_OBJECTS} ${LIB_OBJECTS}
 	${CXX} ${LINKER_FLAGS} -o $@ $^
 
 ## build tests and runner
