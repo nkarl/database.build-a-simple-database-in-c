@@ -35,7 +35,17 @@ TEST_OBJECTS 	:= ${addprefix ${BUILD_TESTS}/, ${TEST_OBJECTS}}
 ####################################################################
 INCLUDE 	:= -I${HDR}
 CXX 		:= gcc
-COMPILER_FLAGS 	:= -g -Wall -Wextra -Wconversion -Wpedantic ${INCLUDE}
+COMPILER_FLAGS 	:= -g -O2 \
+		   -Wall -Wextra -Wpedantic -Wformat -Wformat=2 -Wconversion -Wimplicit-fallthrough \
+		   -Werror=format-security \
+		   -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3 \
+		   -D_GLIBCXX_ASSERTIONS \
+		   -fstrict-flex-arrays=3 \
+		   -fstack-clash-protection -fstack-protector-strong \
+		   -Wl,-z,nodlopen -Wl,-z,noexecstack \
+		   -Wl,-z,relro -Wl,-z,now \
+		   ${INCLUDE} \
+
 LINKER_FLAGS	:=
 
 .PHONY: app

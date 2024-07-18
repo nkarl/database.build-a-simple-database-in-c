@@ -17,3 +17,10 @@ The project is not meant to be comprehensive. It only supports a symbolic set of
 - [ ] Part 13 - Updating Parent Node After a Split
 - [ ] Part 14 - Splitting Internal Nodes
 - [ ] Part 15 - Where to go next
+
+## References
+
+- [SQLite Architecture](https://www.sqlite.org/arch.html)
+- [GCC Variadic Functions](https://www.gnu.org/software/libc/manual/html_node/How-Variadic.html)
+- [Additional C compiler flags for compile-time vulnerabilities detection and run-time protection](https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html)
+

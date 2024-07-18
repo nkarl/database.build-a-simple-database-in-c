@@ -160,7 +160,9 @@ int main(void) {
  * TODO:
  *  - [x] set up the test suite and runner
  *  - [ ] look into variadic arguments for functions
+ *    - REF: https://www.gnu.org/software/libc/manual/html_node/How-Variadic.html
  *  - [ ] look into how to build a parser for the query statements
  *    - how does _parsing_ a SQL statement work?
  *    - how does the _syntax_ and _semantics_ of the language apply?
+ *    - REF: https://www.sqlite.org/arch.html
  */
