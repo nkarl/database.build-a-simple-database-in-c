@@ -158,6 +158,9 @@ int main(void) {
 
 /*
  * TODO:
- *  - [ ] set up the test suite and runner
+ *  - [x] set up the test suite and runner
+ *  - [ ] look into variadic arguments for functions
  *  - [ ] look into how to build a parser for the query statements
+ *    - how does _parsing_ a SQL statement work?
+ *    - how does the _syntax_ and _semantics_ of the language apply?
  */
