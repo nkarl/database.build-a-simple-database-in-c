@@ -1,0 +1,6 @@
+/build/
+/a
+/t
+/**/**.out
+compile_commands.json
+/.cache/
